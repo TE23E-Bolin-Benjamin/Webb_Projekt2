@@ -1,0 +1,18 @@
+header{
+    position: sticky;
+    top: 0;
+    background-color: yellow;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    margin-top: 0;
+}
+.ikon-v{   
+    padding-top: 10px;
+    padding-left: 15px;
+}
+.ikon-h{
+    padding-top: 10px;
+    padding-right: 15px;
+    gap: 10px;
+} 
