@@ -51,3 +51,32 @@ nav{
     gap: 10px;
     margin-top: 10px;
 }
+
+.välkomstRuta{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.välkomstRuta > h1{
+    font-family: 'Sofia', Verdana, Tahoma;
+    text-align: start;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.searchBar{
+    border: solid blue;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.searchBar > i{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: blue;
+}
