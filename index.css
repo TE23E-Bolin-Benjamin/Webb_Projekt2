@@ -1,7 +1,7 @@
 header{
     position: sticky;
     top: 0;
-    background-color: yellow;
+    background-color: blue;
     display: flex;
     justify-content: space-between;
     height: 60px;
@@ -16,3 +16,38 @@ header{
     padding-right: 15px;
     gap: 10px;
 } 
+main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    margin-top: 15px;
+}
+
+.bars{
+    display: inline-block;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    background-color: blue;
+    color: white;
+    justify-content: center;
+}
+
+.bars > i{
+    margin: 7px;
+    margin-left: 10px;
+}
+
+.länkar{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    gap: 10px;
+    margin-top: 10px;
+}
