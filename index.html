@@ -33,14 +33,14 @@
                 <a href="https://jysk.se/butiker">Butiker/Öppetider</a>
             </div>
         </nav>
-    </main>
-    <article class="välkomstRuta">
-        <h1>Hej!</h1>
-        <div class="searchBar">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <label for="text"></label>
-            <input type="text" id="text">
-        </div>
+    
+        <article class="välkomstRuta">
+            <h1>Hej!</h1>
+            <div class="searchBar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <label for="text"></label>
+                <input type="text" id="text">
+            </div>
         <div class="info">
             <i class="fa-regular fa-clock"></i>
             <i class="fa-solid fa-coins"></i>
@@ -49,58 +49,68 @@
             <p>Billigt</p>
             <p>Enkelt</p>
         </div>
-    </article>
+        </article>
 
-    <article class="Jysk-varuhus">
+        <article class="Jysk-varuhus">
         <img src="img/images.webp" alt="Bild på ett Jysk-varuhus">
-    </article>
+        </article>
 
-    <article class="produkt1">
-        <img src="img/185789.webp" alt="Bild på en Stol">
-        <h2>Stol1 - 999kr</h2>
-        <div class="läggTillIVarukorg">
-            <button onclick="läggTillIVarukorg('Stol1', 999)">Lägg till i varukorg</button>
-        </div>
-    </article>
+        <article class="produkt1">
+                <img src="img/185789.webp" alt="Bild på en Stol">
+            <h2>Stol1 - 999kr</h2>
+            <div class="läggTillIVarukorg">
+                <button onclick="läggTillIVarukorg('Stol1', 999)">Lägg till i varukorg</button>
+            </div>
+        </article>
 
-    <article class="produkt2">
-        <img src="img/213355.webp" alt="Bild på en Stol">
-        <h2>Stol2 - 499kr</h2>
-        <div class="läggTillIVarukorg">
-            <button onclick="läggTillIVarukorg('Stol1', 499)">Lägg till i varukorg</button>
-        </div>
-    </article>
+        <article class="produkt2">
+                <img src="img/213355.webp" alt="Bild på en Stol">
+            <h2>Stol2 - 499kr</h2>
+            <div class="läggTillIVarukorg">
+                <button onclick="läggTillIVarukorg('Stol1', 499)">Lägg till i varukorg</button>
+            </div>
+        </article>
 
-    <article class="produkt3">
-        <img src="img/245502.webp" alt="Bild på en Stol">
-        <h2>Stol3 - 399kr</h2>
-    <div class="läggTillIVarukorg">
-        <button onclick="läggTillIVarukorg('Stol3', 399)">Lägg till i varukorg</button>
-    </div>
-    </article>
+        <article class="produkt3">
+                <img src="img/245502.webp" alt="Bild på en Stol">
+            <h2>Stol3 - 399kr</h2>
+            <div class="läggTillIVarukorg">
+                <button onclick="läggTillIVarukorg('Stol3', 399)">Lägg till i varukorg</button>
+            </div>
+        </article>
 
-    <article class="produkt4">
-        <img src="img/259197.webp" alt="Bild på en stol">
-        <h2>Stol4 - 799 kr</h2>
-    <div class="läggTillIVarukorg">
-        <button onclick="läggTillIVarukorg('Stol4', 799)">Lägg till i varukorg</button>
-    </div>
-    </article>'
+        <article class="produkt4">
+                <img src="img/259197.webp" alt="Bild på en stol">
+            <h2>Stol4 - 799 kr</h2>
+            <div class="läggTillIVarukorg">
+                <button onclick="läggTillIVarukorg('Stol4', 799)">Lägg till i varukorg</button>
+            </div>
+        </article>'
     
-    <article class="produkt5">
-        <img src="img/259336.webp" alt="Bild på en Stol">
-        <h2>Stol5 - 699 kr</h2>
-    <div class="läggTillIVarukorg">
-        <button onclick="läggTillIVarukorg('Stol5', 699)">Lägg till i varukorg</button>
-    </div>
-    </article>
+        <article class="produkt5">
+                <img src="img/259336.webp" alt="Bild på en Stol">
+            <h2>Stol5 - 699 kr</h2>
+            <div class="läggTillIVarukorg">
+                <button onclick="läggTillIVarukorg('Stol5', 699)">Lägg till i varukorg</button>
+            </div>
+        </article>
 
-    <article class="produkt6">
-        <img src="img/98795.webp" alt="Bild på en Stol">
+        <article class="produkt6">
+            <img src="img/98795.webp" alt="Bild på en Stol">
         <h2>Stol6 - 1199 kr</h2>
-    <div class="läggTillIVarukorg">
-        <button onclick="läggTillIVarukorg('Stol6', 1199)">Lägg till i varukorg</button>
-    </div>
-    </article> 
+         <div class="läggTillIVarukorg">
+                <button onclick="läggTillIVarukorg('Stol6', 1199)">Lägg till i varukorg</button>
+            </div>
+        </article> 
+        <article class="varukorg">
+            <h2>varukorg</h2>
+            <ul id="varukorg">
+                <li>Varukorgen är tom</li>
+            </ul>
+            <h2>summa: <span id="summa"></span></h2>
+            <button onclick="betala()">Betala</button>
+        </article>
+
+    </main>
 
 </body>
