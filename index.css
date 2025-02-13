@@ -96,3 +96,10 @@ nav{
 .info > i{
     padding-top: 15px;
 }
+
+.Jysk-varuhus{
+    justify-self: center; 
+}
+.Jysk-varuhus > img{
+    border-radius: 10px;
+}
