@@ -34,7 +34,7 @@ nav{
     height: 55px;
     width: 55px;
     border-radius: 50%;
-    background-color: blue;
+    background-color: lightblue;
     color: white;
     justify-content: center;
 }
@@ -128,6 +128,77 @@ footer{
     margin-top: 20px;
     padding-top : 15px;
 }
+
 footer > i{
     color: blue;
+}
+
+h1{
+    font-size: calc(1.5rem + 3vw);
+    color: black;
+} 
+
+h2{
+    font-size: calc(1rem + 2vw);
+    color: black;
+}
+
+p{
+    font-size: calc(0.5rem + 1vw);
+    color: blue;
+}
+
+i{
+    font-size: 2rem;
+    color: white;
+}
+
+ul{
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li{
+    font-size: calc(0.5rem + 1vw);
+    margin: 5px;
+}
+
+label{
+    font-size: calc(1rem + 2vw);
+    color: red;
+}
+
+input{
+    background-color: lightblue;
+    border-color:   lightblue;
+    color: lightblue;
+}
+
+button{
+    font-size: calc(0.5rem + 1vw);
+    border: 3px solid blue;
+    border-radius: 20px;
+    background-color: red;
+    color: blue;
+    padding: 10px;
+}
+
+button:hover{
+    box-shadow: 0 0 3px 3px blue inset;
+}
+
+a:link{
+    font-size: calc(0.5rem + 1vw);
+    color: yellow;
+    text-decoration: none;
+}
+
+a:visited{
+    color: blue;
+    text-decoration: none;
+}
+
+img{
+    height: auto;
+    width: 100%;
 }
