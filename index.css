@@ -165,7 +165,7 @@ li{
 
 label{
     font-size: calc(1rem + 2vw);
-    color: red;
+    color: red; 
 }
 
 input{
