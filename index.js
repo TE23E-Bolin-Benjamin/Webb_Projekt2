@@ -23,3 +23,48 @@ function taBortFrånVarukorg(produkt, pris) {
         }
     }
 }
+
+// En funktion för att hålla varukorgen uppdaterad
+function uppdateraVarukorg() {
+    let varukorgElement = document.getElementById("varukorg");
+
+    // Loopar igenom varukorg-elementet tills att alla element är borttagna från variabeln
+    while (varukorgElement.firstChild) {
+        varukorgElement.removeChild(varukorgElement.firstChild);
+    }
+
+    // Om varukorgen är tillfälligt tom skrivs texten "Varukorgen är tom"
+    if (varukorg.length === 0) {
+        varukorgElement.innerHTML = "<li>Varukorgen är tom</li>";
+    } 
+    else {
+        // Loopar igenom varukorgen och lägger till produkten
+        for (let i = 0; i < varukorg.length; i++) {
+            let produkt = varukorg[i].produkt;
+            let pris = varukorg[i].pris;
+
+            // skapar en ett li-element som sätter ihop namnet och priset på produkten i en string
+            let produktElement = document.createElement("li");
+            let produktText = document.createTextNode(produkt + " " + pris.toFixed() + " kr");
+            produktElement.appendChild(produktText);
+
+            // Skapar en ta-bort-knapp för produkten
+            let taBortKnapp = document.createElement("button");
+            taBortKnapp.innerHTML = "Ta bort";
+            taBortKnapp.onclick = function() {
+                taBortFrånVarukorg(produkt, pris);
+            }
+            produktElement.appendChild(taBortKnapp);
+
+            // Lägger till den nya produkten i varukorgen
+            varukorgElement.appendChild(produktElement);
+        }
+    }
+
+    // Uppdaterar den totala summan av produkterna i varukorgen
+    summa = beräknaSumman();
+    document.getElementById("summa").innerHTML = summa.toFixed();
+
+    // Sparar varukorgen i localstorage
+    localStorage.setItem("varukorg", JSON.stringify(varukorg));
+}
