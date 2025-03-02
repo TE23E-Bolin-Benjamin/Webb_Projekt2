@@ -68,3 +68,20 @@ function uppdateraVarukorg() {
     // Sparar varukorgen i localstorage
     localStorage.setItem("varukorg", JSON.stringify(varukorg));
 }
+
+// En funktion som beräknar totala summan av produkterna i varukorgen
+function beräknaSumman() {
+    let total = 0;
+    for (let i = 0; i < varukorg.length; i++) {
+        total += varukorg[i].pris;
+    }
+    return total;
+}
+
+// En funtion för att betala
+function betala() {
+    // Nollställer varukorgen
+    varukorg = [];
+    uppdateraVarukorg();
+}
+
