@@ -85,3 +85,12 @@ function betala() {
     uppdateraVarukorg();
 }
 
+// Hämtar varukorgen från localstorage och gör om den från json format till vanligt format
+window.onload = function() {
+    let varukorgString = localStorage.getItem("varukorg");  
+    if (varukorgString !== null) {
+        varukorg = JSON.parse(varukorgString);
+        uppdateraVarukorg();
+    }
+}
+
