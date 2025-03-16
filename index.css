@@ -3,7 +3,17 @@ body{
     background-color: lightblue;
     margin: 0;
     padding: 0%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
+
+article img{
+    height: 220px;
+    width: 200px;
+    margin-top: 20px;
+}
+
 header{
     position: sticky;
     top: 0;
@@ -28,6 +38,14 @@ main{
     margin-top: 15px;
 }
 
+article{
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+/*Menyer för navigation*/
 nav{
     display: flex;
     flex-direction: column;
@@ -107,8 +125,11 @@ nav{
     justify-self: center; 
 }
 
+/*Jysk varuhusbild bred */
 .Jysk-varuhus > img{
     border-radius: 10px;
+    width: 100%;
+    height: 100%;
 }
 
 .läggTillIVarukorg{
@@ -147,6 +168,7 @@ h1{
 h2{
     font-size: calc(1rem + 2vw);
     color: black;
+    margin-left: 10px;
 }
 
 p{
@@ -171,13 +193,13 @@ li{
 
 label{
     font-size: calc(1rem + 2vw);
-    color: red; 
+    color: blue; 
 }
 
 input{
     background-color: lightblue;
     border-color:   lightblue;
-    color: lightblue;
+    color: blue;
 }
 
 button{
@@ -187,6 +209,7 @@ button{
     background-color: red;
     color: blue;
     padding: 10px;
+    margin-left: 10px;
 }
 
 button:hover{
@@ -207,4 +230,93 @@ a:visited{
 img{
     height: auto;
     width: 100%;
+    
+}
+
+/* Tablet storlek*/
+@media screen and (min-width: 641px) and (max-width: 1007px){
+    main{
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr;
+    }
+    .välkomstRuta{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .Jysk-varuhus{
+        grid-column: 3/5;
+        grid-row: 1/2;
+    }
+    .produkt1{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .produkt2{
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    .produkt3{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    .produkt4{
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+    .produkt5{
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+    .produkt6{
+        grid-column: 3/4;
+        grid-row: 4/5;
+    }
+    .varukorg{
+        grid-column: 1/2;
+        grid-row: 2/5;
+    }
+}
+
+/* Desktop storlek*/
+@media screen and (min-width: 1008px){
+    main{
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr 2fr;
+    }
+    .välkomstRuta{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .Jysk-varuhus{
+        grid-column: 3/5;
+        grid-row: 1/2;
+    }
+    .produkt1{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .produkt2{
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    .produkt3{
+        grid-column: 4/5;
+        grid-row: 2/3;
+    }
+    .produkt4{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    .produkt5{
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+    .produkt6{
+        grid-column: 4/5;
+        grid-row: 3/4;
+    }
+    .varukorg{
+        grid-column: 1/2;
+        grid-row: 2/5;
+    }
 }

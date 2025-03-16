@@ -24,7 +24,7 @@ function taBortFrånVarukorg(produkt, pris) {
     }
 }
 
-// En funktion för att hålla varukorgen uppdaterad
+// En funktion för att hålla varukorgen uppdaterad på sidan
 function uppdateraVarukorg() {
     let varukorgElement = document.getElementById("varukorg");
 
